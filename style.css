@@ -25,6 +25,11 @@ top:0;
 z-index:100;
 }
 
+position:sticky;
+top:0;
+z-index:999;
+background:#f7f3f0;
+
 .logo{
 font-size:28px;
 font-family:'Cormorant Garamond',serif;
