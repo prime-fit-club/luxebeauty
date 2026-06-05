@@ -204,3 +204,46 @@ window.addEventListener(
 'load',
 revealOnScroll
 );
+/* PREMIUM DRAWER */
+
+const wishlistIcon =
+document.querySelector('.wishlist-icon');
+
+const cartIcon =
+document.querySelector('.cart-icon');
+
+const wishlistDrawer =
+document.querySelector('.wishlist-drawer');
+
+const cartDrawer =
+document.querySelector('.cart-drawer');
+
+const closeWishlist =
+document.querySelector('.close-wishlist');
+
+const closeCart =
+document.querySelector('.close-cart');
+
+wishlistIcon.addEventListener('click',()=>{
+
+wishlistDrawer.classList.add('active');
+
+});
+
+cartIcon.addEventListener('click',()=>{
+
+cartDrawer.classList.add('active');
+
+});
+
+closeWishlist.addEventListener('click',()=>{
+
+wishlistDrawer.classList.remove('active');
+
+});
+
+closeCart.addEventListener('click',()=>{
+
+cartDrawer.classList.remove('active');
+
+});
