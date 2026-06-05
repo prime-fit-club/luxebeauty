@@ -1375,19 +1375,15 @@ transform:translateY(0px);
 }
 .cursor-glow{
 position:fixed;
-width:350px;
-height:350px;
+top:0;
+left:0;
+width:300px;
+height:300px;
 border-radius:50%;
-background:
-radial-gradient(
-circle,
-rgba(255,255,255,.18),
-transparent 70%
-);
+background:rgba(255,255,255,0.18);
 pointer-events:none;
-z-index:0;
 transform:translate(-50%,-50%);
-filter:blur(45px);
-transition:
-transform .08s linear;
+filter:blur(80px);
+z-index:999;
+mix-blend-mode:soft-light;
 }
