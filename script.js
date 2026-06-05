@@ -175,17 +175,19 @@ function revealOnScroll(){
 
 reveals.forEach((item)=>{
 
-const windowHeight =
-window.innerHeight;
-
 const revealTop =
 item.getBoundingClientRect().top;
 
-const revealPoint = 120;
+const windowHeight =
+window.innerHeight;
 
-if(revealTop < windowHeight - revealPoint){
+if(revealTop < windowHeight - 100){
 
 item.classList.add('active');
+
+}else{
+
+item.classList.remove('active');
 
 }
 
@@ -198,4 +200,7 @@ window.addEventListener(
 revealOnScroll
 );
 
-revealOnScroll();
+window.addEventListener(
+'load',
+revealOnScroll
+);
