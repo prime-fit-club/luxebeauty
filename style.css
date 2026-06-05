@@ -19,10 +19,15 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:30px 8%;
-position:absolute;
-width:100%;
+position:sticky;
 top:0;
-z-index:100;
+width:100%;
+z-index:99999;
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+transition:.4s ease;
+border-bottom:1px solid rgba(0,0,0,0.04);
 }
 
 position:sticky;
