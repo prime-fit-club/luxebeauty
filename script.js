@@ -319,3 +319,20 @@ card.style.transform =
 });
 
 });
+const glow =
+document.querySelector(
+'.cursor-glow'
+);
+
+document.addEventListener(
+'mousemove',
+function(e){
+
+glow.style.left =
+e.clientX + 'px';
+
+glow.style.top =
+e.clientY + 'px';
+
+}
+);
