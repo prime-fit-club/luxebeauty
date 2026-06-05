@@ -54,42 +54,62 @@ wishlistNumber;
 });
 
 });
-// CART ANIMATION
+// CART ANIMATION FIX
 
 const cartIcon = document.querySelector('.cart-icon');
 const cartCount = document.querySelector('.cart-count');
-const addButtons = document.querySelectorAll('.product-card button');
+
+const addButtons =
+document.querySelectorAll('.product-bottom button');
 
 let cartItems = 0;
 
 addButtons.forEach(button => {
 
-button.addEventListener('click', function(e){
+button.addEventListener('click', (e) => {
 
 e.preventDefault();
+e.stopPropagation();
 
-const card = this.closest('.product-card');
-const image = card.querySelector('img');
+const card =
+button.closest('.product-card');
 
-const flyingImage = image.cloneNode(true);
+const image =
+card.querySelector('img');
 
-const rect = image.getBoundingClientRect();
-const cartRect = cartIcon.getBoundingClientRect();
+const flyingImage =
+image.cloneNode(true);
+
+const imgRect =
+image.getBoundingClientRect();
+
+const cartRect =
+cartIcon.getBoundingClientRect();
 
 flyingImage.style.position = 'fixed';
-flyingImage.style.left = rect.left + 'px';
-flyingImage.style.top = rect.top + 'px';
-flyingImage.style.width = rect.width + 'px';
-flyingImage.style.height = rect.height + 'px';
+flyingImage.style.left =
+imgRect.left + 'px';
+
+flyingImage.style.top =
+imgRect.top + 'px';
+
+flyingImage.style.width =
+imgRect.width + 'px';
+
+flyingImage.style.height =
+imgRect.height + 'px';
+
 flyingImage.style.objectFit = 'cover';
 flyingImage.style.borderRadius = '20px';
-flyingImage.style.zIndex = '99999';
+flyingImage.style.zIndex = '999999';
+flyingImage.style.pointerEvents = 'none';
+
 flyingImage.style.transition =
-'all 1s cubic-bezier(.2,.8,.2,1)';
+'all 900ms cubic-bezier(.22,.61,.36,1)';
 
 document.body.appendChild(flyingImage);
 
-setTimeout(() => {
+requestAnimationFrame(() => {
 
 flyingImage.style.left =
 cartRect.left + 'px';
@@ -97,31 +117,33 @@ cartRect.left + 'px';
 flyingImage.style.top =
 cartRect.top + 'px';
 
-flyingImage.style.width = '20px';
-flyingImage.style.height = '20px';
+flyingImage.style.width = '18px';
+flyingImage.style.height = '18px';
+flyingImage.style.opacity = '.2';
 
-flyingImage.style.opacity = '0.3';
 flyingImage.style.transform =
 'scale(.2) rotate(360deg)';
 
-}, 10);
+});
 
 setTimeout(() => {
 
 flyingImage.remove();
 
 cartItems++;
-cartCount.innerText = cartItems;
+
+cartCount.textContent =
+cartItems;
 
 cartIcon.animate([
 { transform:'scale(1)' },
 { transform:'scale(1.3)' },
 { transform:'scale(1)' }
 ],{
-duration:400
+duration:350
 });
 
-},1000);
+}, 900);
 
 });
 
