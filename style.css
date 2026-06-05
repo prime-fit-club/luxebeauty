@@ -862,12 +862,10 @@ transition:.35s ease;
 .product-card:hover button{
 transform:translateY(-4px);
 }
-/* SCROLL REVEAL ANIMATION */
-
 .reveal{
-opacity:0;
-transform:translateY(80px);
-transition:all 1s cubic-bezier(.22,1,.36,1);
+opacity:1;
+transform:translateY(0);
+transition:all .9s cubic-bezier(.22,1,.36,1);
 }
 
 .reveal.active{
