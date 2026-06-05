@@ -802,3 +802,12 @@ align-items:center;
 justify-content:center;
 z-index:999;
 }
+/* CART SHAKE */
+
+.cart-icon{
+transition:.3s;
+}
+
+.cart-icon.bump{
+transform:scale(1.2);
+}
