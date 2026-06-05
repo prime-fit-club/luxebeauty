@@ -1514,3 +1514,38 @@ width:100%;
 }
 
 }
+/* PREMIUM PRODUCT HOVER */
+
+.product-card{
+transition:
+transform .45s ease,
+box-shadow .45s ease;
+}
+
+.product-card:hover{
+transform:
+translateY(-14px);
+
+box-shadow:
+0 30px 60px
+rgba(0,0,0,.14);
+}
+
+.product-card img{
+transition:
+transform .8s ease;
+}
+
+.product-card:hover img{
+transform:
+scale(1.08);
+}
+
+.product-bottom button{
+transition:.35s ease;
+}
+
+.product-card:hover .product-bottom button{
+transform:
+translateY(-3px);
+}
