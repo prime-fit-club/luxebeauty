@@ -476,7 +476,11 @@ max-width:650px;
 border-radius:40px;
 display:block;
 }
-
+.hero-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
 .beauty-stats{
 display:flex;
 gap:20px;
