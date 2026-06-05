@@ -671,3 +671,16 @@ max-width:520px;
 border-radius:35px;
 box-shadow:0 25px 60px rgba(0,0,0,0.12);
 }
+.cart-btn{
+background:#111;
+color:white;
+padding:16px 28px;
+border-radius:50px;
+text-decoration:none;
+display:inline-block;
+transition:.4s;
+}
+
+.cart-btn:hover{
+transform:translateY(-5px);
+}
