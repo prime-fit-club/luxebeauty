@@ -1319,3 +1319,33 @@ max-width:100%;
 }
 
 }
+/* BACK TO TOP */
+
+#backToTop{
+position:fixed;
+bottom:30px;
+right:30px;
+width:58px;
+height:58px;
+border:none;
+border-radius:50%;
+background:#111;
+color:white;
+font-size:24px;
+cursor:pointer;
+opacity:0;
+visibility:hidden;
+transition:.35s ease;
+z-index:99999;
+box-shadow:
+0 15px 35px rgba(0,0,0,.18);
+}
+
+#backToTop:hover{
+transform:translateY(-6px);
+}
+
+#backToTop.show{
+opacity:1;
+visibility:visible;
+}
