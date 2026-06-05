@@ -577,3 +577,88 @@ margin-bottom:4px;
 font-size:14px;
 color:#777;
 }
+/* LUXURY BANNER */
+
+.luxury-banner{
+margin:120px 8%;
+background:linear-gradient(
+135deg,
+#efe6df,
+#f8f4f1
+);
+border-radius:45px;
+padding:80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:60px;
+overflow:hidden;
+}
+
+.banner-content{
+max-width:520px;
+}
+
+.banner-small{
+letter-spacing:5px;
+font-size:13px;
+color:#9d8877;
+margin-bottom:18px;
+}
+
+.banner-content h2{
+font-size:72px;
+font-family:'Cormorant Garamond', serif;
+line-height:1;
+margin-bottom:25px;
+color:#1d1d1d;
+}
+
+.banner-content p{
+font-size:18px;
+line-height:1.9;
+color:#555;
+margin-bottom:35px;
+}
+
+.banner-buttons{
+display:flex;
+gap:20px;
+}
+
+.banner-btn{
+background:#111;
+color:white;
+border:none;
+padding:18px 36px;
+border-radius:50px;
+font-size:16px;
+cursor:pointer;
+transition:.4s;
+}
+
+.banner-btn:hover{
+transform:translateY(-6px);
+}
+
+.outline-btn{
+background:transparent;
+border:1px solid #d5c8bf;
+padding:18px 36px;
+border-radius:50px;
+font-size:16px;
+cursor:pointer;
+transition:.4s;
+}
+
+.outline-btn:hover{
+background:white;
+transform:translateY(-6px);
+}
+
+.banner-image img{
+width:100%;
+max-width:520px;
+border-radius:35px;
+box-shadow:0 25px 60px rgba(0,0,0,0.12);
+}
