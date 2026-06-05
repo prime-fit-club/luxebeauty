@@ -320,3 +320,36 @@ opacity:1;
 transform:translateY(0);
 }
 }
+/* BEAUTY STATS */
+
+.beauty-stats{
+display:flex;
+gap:25px;
+margin-top:60px;
+flex-wrap:wrap;
+}
+
+.stat-box{
+background:white;
+padding:28px;
+border-radius:28px;
+min-width:180px;
+box-shadow:
+0 15px 40px rgba(0,0,0,0.06);
+transition:0.4s;
+}
+
+.stat-box:hover{
+transform:translateY(-10px);
+}
+
+.stat-box h3{
+font-size:34px;
+margin-bottom:8px;
+font-weight:600;
+}
+
+.stat-box p{
+color:#777;
+font-size:15px;
+}
