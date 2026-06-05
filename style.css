@@ -1014,15 +1014,3 @@ transition:.7s;
 .add-cart:hover::before{
 left:100%;
 }
-/* SCROLL REVEAL */
-
-.reveal{
-opacity:0;
-transform:translateY(80px);
-transition:1s ease;
-}
-
-.reveal.active{
-opacity:1;
-transform:translateY(0);
-}
