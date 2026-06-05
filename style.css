@@ -811,3 +811,22 @@ transition:.3s;
 .cart-icon.bump{
 transform:scale(1.2);
 }
+/* PREMIUM STICKY HEADER */
+
+.navbar{
+position:sticky;
+top:0;
+z-index:99999;
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+transition:.4s ease;
+border-bottom:1px solid rgba(0,0,0,0.04);
+}
+
+.navbar.scrolled{
+padding:18px 8%;
+box-shadow:
+0 10px 40px rgba(0,0,0,0.06);
+background:rgba(255,255,255,0.88);
+}
