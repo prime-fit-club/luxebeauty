@@ -212,3 +212,111 @@ flex-wrap:wrap;
 max-width:100%;
 }
 }
+/* PREMIUM UPGRADE */
+
+body{
+scroll-behavior:smooth;
+background:
+linear-gradient(to bottom,#f9f5f2,#f5efea);
+}
+
+/* NAVBAR PREMIUM */
+
+header{
+position:sticky;
+top:0;
+z-index:999;
+backdrop-filter:blur(18px);
+background:rgba(255,255,255,0.65);
+border-bottom:1px solid rgba(0,0,0,0.05);
+}
+
+/* BUTTONS */
+
+button,
+.hero-buttons a,
+.btn{
+transition:0.35s ease;
+}
+
+button:hover,
+.hero-buttons a:hover,
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* HERO IMAGE */
+
+.hero img{
+transition:0.6s ease;
+box-shadow:
+0 20px 60px rgba(0,0,0,0.12);
+}
+
+.hero img:hover{
+transform:scale(1.03);
+}
+
+/* LUXURY TITLE */
+
+.hero h1{
+letter-spacing:-2px;
+line-height:1;
+}
+
+/* TEXT */
+
+.hero p{
+line-height:1.8;
+max-width:540px;
+}
+
+/* BUTTON STYLE */
+
+.primary-btn{
+background:#111;
+color:#fff;
+border:none;
+padding:18px 36px;
+border-radius:50px;
+font-size:17px;
+cursor:pointer;
+}
+
+.secondary-btn{
+background:transparent;
+border:1px solid #d6cdc5;
+padding:18px 36px;
+border-radius:50px;
+font-size:17px;
+cursor:pointer;
+}
+
+/* HOVER */
+
+.primary-btn:hover{
+transform:translateY(-4px);
+}
+
+.secondary-btn:hover{
+background:#111;
+color:white;
+}
+
+/* FLOAT EFFECT */
+
+.hero{
+animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
