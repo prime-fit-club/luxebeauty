@@ -209,9 +209,6 @@ revealOnScroll
 const wishlistIcon =
 document.querySelector('.wishlist-icon');
 
-const cartIcon =
-document.querySelector('.cart-icon');
-
 const wishlistDrawer =
 document.querySelector('.wishlist-drawer');
 
