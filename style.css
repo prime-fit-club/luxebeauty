@@ -835,3 +835,30 @@ box-shadow:
 0 10px 40px rgba(0,0,0,0.06);
 background:rgba(255,255,255,0.88);
 }
+/* PREMIUM PRODUCT HOVER */
+
+.product-card{
+transition:.45s ease;
+transform:translateY(0);
+}
+
+.product-card:hover{
+transform:translateY(-14px);
+box-shadow:0 35px 70px rgba(0,0,0,0.10);
+}
+
+.product-card img{
+transition:.6s ease;
+}
+
+.product-card:hover img{
+transform:scale(1.07);
+}
+
+.product-card button{
+transition:.35s ease;
+}
+
+.product-card:hover button{
+transform:translateY(-4px);
+}
