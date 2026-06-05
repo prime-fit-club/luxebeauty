@@ -703,8 +703,26 @@ justify-content:center;
 font-size:22px;
 cursor:pointer;
 transition:.4s;
-z-index:20;
+z-index:999;
+pointer-events:auto;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+.product-card{
+position:relative;
+overflow:visible;
+}
+
+.product-card img{
+pointer-events:none;
+}
+
+.badge{
+z-index:5;
+}
+
+.wishlist{
+z-index:9999 !important;
+pointer-events:auto !important;
 }
 
 .wishlist:hover{
