@@ -514,8 +514,16 @@ margin-top:80px;
 /* TESTIMONIALS */
 
 .testimonials{
-padding:120px 8%;
-background:#f8f4f1;
+margin:140px 8%;
+padding:100px 70px;
+background:linear-gradient(
+135deg,
+#efe7e1,
+#f8f5f2
+);
+border-radius:50px;
+position:relative;
+overflow:hidden;
 }
 
 .testimonial-top{
