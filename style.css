@@ -1549,3 +1549,33 @@ transition:.35s ease;
 transform:
 translateY(-3px);
 }
+/* FLOATING PRODUCT CARDS */
+
+.product-card{
+animation:
+floatCard 4s ease-in-out infinite;
+}
+
+.product-card:nth-child(2){
+animation-delay:.8s;
+}
+
+.product-card:nth-child(3){
+animation-delay:1.6s;
+}
+
+@keyframes floatCard{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
