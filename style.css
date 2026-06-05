@@ -1180,3 +1180,6 @@ transform:translateY(-6px);
 background:white;
 box-shadow:0 15px 35px rgba(255,255,255,0.15);
 }
+html{
+scroll-behavior:smooth;
+}
