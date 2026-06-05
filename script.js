@@ -247,37 +247,36 @@ cartDrawer.classList.remove('active');
 // BACK TO TOP
 
 const backToTop =
-document.querySelector(
-'#backToTop'
+document.getElementById(
+'backToTop'
 );
 
-window.addEventListener(
-'scroll',
-()=>{
+window.onscroll = function(){
 
-if(window.scrollY > 500){
+if(
+document.body.scrollTop > 300 ||
+document.documentElement.scrollTop > 300
+){
 
-backToTop.classList.add(
-'show'
-);
+backToTop.style.opacity = '1';
+backToTop.style.visibility =
+'visible';
 
 }else{
 
-backToTop.classList.remove(
-'show'
-);
+backToTop.style.opacity = '0';
+backToTop.style.visibility =
+'hidden';
 
 }
 
-});
+};
 
-backToTop.addEventListener(
-'click',
-()=>{
+backToTop.onclick = function(){
 
 window.scrollTo({
 top:0,
 behavior:'smooth'
 });
 
-});
+};
