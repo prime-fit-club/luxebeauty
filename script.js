@@ -247,25 +247,3 @@ closeCart.addEventListener('click',()=>{
 cartDrawer.classList.remove('active');
 
 });
-/* SCROLL ANIMATION */
-
-const reveals =
-document.querySelectorAll('.reveal');
-
-window.addEventListener('scroll',()=>{
-
-reveals.forEach((element)=>{
-
-const top =
-element.getBoundingClientRect().top;
-
-const windowHeight =
-window.innerHeight;
-
-if(top < windowHeight - 120){
-element.classList.add('active');
-}
-
-});
-
-});
